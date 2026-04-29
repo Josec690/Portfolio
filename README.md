@@ -49,17 +49,4 @@ portfolio/
 3. Vá em **Settings → Pages → Deploy from branch → main**
 4. Acesse `https://seuusername.github.io`
 
-## 📝 Personalização
 
-Edite o `index.html` e troque:
-- `Seu Nome` → seu nome real
-- `seuusername` → seu username do GitHub
-- `seuemail@gmail.com` → seu email
-- `seulinkedin` → seu LinkedIn
-- Conteúdo das seções conforme sua realidade
-
-Adicione sua foto em `img/foto-perfil.jpg` e substitua o emoji placeholder no HTML.
-
-## 📄 Licença
-
-MIT — use à vontade!
