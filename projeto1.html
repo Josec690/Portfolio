@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TaskFlow | Seu Nome</title>
+  <meta name="description" content="TaskFlow — gerenciador de tarefas full-stack com React e Node.js" />
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👨‍💻</text></svg>" />
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#C8522A" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header" role="banner">
+    <div class="container">
+      <div class="header-inner">
+        <a href="index.html" class="logo">Seu<span>Nome</span></a>
+        <div class="header-controls">
+          <button class="theme-toggle" id="theme-toggle" aria-label="Alternar tema">🌙</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="project-page">
+      <div class="container">
+
+        <!-- BACK -->
+        <a href="index.html#projetos" class="back-btn">
+          <i class="fas fa-arrow-left"></i> Voltar aos projetos
+        </a>
+
+        <!-- HERO PROJETO -->
+        <div class="project-hero reveal">
+          <div class="project-meta">
+            <span class="project-tag" style="font-size:0.85rem;padding:0.4rem 0.9rem;">Full Stack</span>
+            <span class="project-tag" style="font-size:0.85rem;padding:0.4rem 0.9rem;">Web App</span>
+          </div>
+          <h1 class="project-page-title">TaskFlow<br /><span style="color:var(--accent)">Gerenciador de Tarefas</span></h1>
+          <p class="project-description">
+            Aplicação web full-stack para gestão produtiva de tarefas e projetos. Desenvolvida com React no front-end e Node.js + Express no back-end, com banco de dados MongoDB. Inclui autenticação JWT, interface drag-and-drop, notificações em tempo real via WebSocket e dashboard de produtividade com gráficos.
+          </p>
+        </div>
+
+        <!-- CONTENT LAYOUT -->
+        <div class="project-content">
+
+          <div class="project-main">
+
+            <!-- CAROUSEL DE SCREENSHOTS -->
+            <div class="carousel reveal" aria-label="Screenshots do projeto">
+              <div class="carousel-track">
+                <div class="carousel-slide">🗂️ Dashboard Principal</div>
+                <div class="carousel-slide" style="background:linear-gradient(135deg,#1C1A18,#2A1F1A);">📋 Lista de Tarefas</div>
+                <div class="carousel-slide" style="background:linear-gradient(135deg,#F0EDE8,#F5E8E3);">📊 Relatórios</div>
+                <div class="carousel-slide" style="background:linear-gradient(135deg,#121010,#221F1C);">👤 Perfil do Usuário</div>
+              </div>
+
+              <button class="carousel-btn prev" aria-label="Slide anterior">
+                <i class="fas fa-chevron-left"></i>
+              </button>
+              <button class="carousel-btn next" aria-label="Próximo slide">
+                <i class="fas fa-chevron-right"></i>
+              </button>
+              <div class="carousel-dots" aria-label="Navegação de slides"></div>
+            </div>
+
+            <!-- MINHA PARTICIPAÇÃO -->
+            <div class="reveal reveal-delay-1">
+              <h2 style="font-family:var(--font-display);font-size:1.75rem;margin-bottom:1.25rem;">
+                <i class="fas fa-user-code" style="color:var(--accent);margin-right:0.5rem;"></i>
+                Minha Participação
+              </h2>
+              <ul class="participation-list">
+                <li class="participation-item">
+                  <i class="fas fa-check-circle"></i>
+                  Arquitetura completa do sistema, desde o banco de dados até a interface
+                </li>
+                <li class="participation-item">
+                  <i class="fas fa-check-circle"></i>
+                  Implementação do sistema de autenticação com JWT e refresh tokens seguros
+                </li>
+                <li class="participation-item">
+                  <i class="fas fa-check-circle"></i>
+                  Desenvolvimento da funcionalidade de drag-and-drop com React DnD
+                </li>
+                <li class="participation-item">
+                  <i class="fas fa-check-circle"></i>
+                  Integração de WebSockets para notificações em tempo real entre usuários
+                </li>
+                <li class="participation-item">
+                  <i class="fas fa-check-circle"></i>
+                  Deploy na AWS EC2 com Nginx como proxy reverso e certificado SSL
+                </li>
+                <li class="participation-item">
+                  <i class="fas fa-check-circle"></i>
+                  Testes unitários e de integração com Jest e Supertest (cobertura >80%)
+                </li>
+              </ul>
+            </div>
+
+          </div>
+
+          <!-- SIDEBAR -->
+          <aside class="project-sidebar">
+
+            <div class="sidebar-card reveal reveal-delay-1">
+              <h3><i class="fas fa-tools" style="margin-right:0.4rem;color:var(--accent);"></i>Tecnologias</h3>
+              <div class="tech-badges">
+                <span class="tech-badge">React</span>
+                <span class="tech-badge">Node.js</span>
+                <span class="tech-badge">Express</span>
+                <span class="tech-badge">MongoDB</span>
+                <span class="tech-badge">JWT</span>
+                <span class="tech-badge">WebSocket</span>
+                <span class="tech-badge">Tailwind CSS</span>
+                <span class="tech-badge">Jest</span>
+                <span class="tech-badge">Docker</span>
+                <span class="tech-badge">AWS EC2</span>
+              </div>
+            </div>
+
+            <div class="sidebar-card reveal reveal-delay-2">
+              <h3><i class="fas fa-link" style="margin-right:0.4rem;color:var(--accent);"></i>Links</h3>
+              <div class="project-action-links">
+                <a href="https://github.com/seuusername/taskflow" target="_blank" rel="noopener" class="btn btn-outline" style="justify-content:center;">
+                  <i class="fab fa-github"></i> Ver no GitHub
+                </a>
+                <a href="https://taskflow-demo.vercel.app" target="_blank" rel="noopener" class="btn btn-primary" style="justify-content:center;">
+                  <i class="fas fa-external-link-alt"></i> Acessar Demo
+                </a>
+              </div>
+            </div>
+
+            <div class="sidebar-card reveal reveal-delay-3">
+              <h3><i class="fas fa-info-circle" style="margin-right:0.4rem;color:var(--accent);"></i>Detalhes</h3>
+              <div style="display:flex;flex-direction:column;gap:0.75rem;">
+                <div style="font-size:0.85rem;">
+                  <span style="color:var(--text-muted);font-family:var(--font-mono);display:block;font-size:0.72rem;margin-bottom:0.2rem;">Tipo</span>
+                  <span style="font-weight:600;">Projeto Pessoal</span>
+                </div>
+                <div style="font-size:0.85rem;">
+                  <span style="color:var(--text-muted);font-family:var(--font-mono);display:block;font-size:0.72rem;margin-bottom:0.2rem;">Status</span>
+                  <span style="font-weight:600;color:var(--accent);">✅ Em produção</span>
+                </div>
+                <div style="font-size:0.85rem;">
+                  <span style="color:var(--text-muted);font-family:var(--font-mono);display:block;font-size:0.72rem;margin-bottom:0.2rem;">Período</span>
+                  <span style="font-weight:600;">Ago 2024 – Presente</span>
+                </div>
+              </div>
+            </div>
+
+          </aside>
+
+        </div>
+
+        <!-- OUTROS PROJETOS -->
+        <div style="margin-top:5rem;padding-top:3rem;border-top:1px solid var(--border);" class="reveal">
+          <h2 style="font-family:var(--font-display);font-size:1.5rem;margin-bottom:1.5rem;">Outros Projetos</h2>
+          <div style="display:flex;gap:1rem;flex-wrap:wrap;">
+            <a href="projeto2.html" class="btn btn-outline">
+              <i class="fas fa-arrow-right"></i> DevBlog
+            </a>
+            <a href="projeto3.html" class="btn btn-outline">
+              <i class="fas fa-arrow-right"></i> StockAI
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <p class="footer-copy">© 2025 Seu Nome</p>
+        <a href="index.html" class="footer-copy" style="color:var(--accent);">← Voltar ao portfólio</a>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top" id="scroll-top" aria-label="Voltar ao topo">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DevBlog | Seu Nome</title>
+  <meta name="description" content="DevBlog — plataforma de artigos técnicos com Django e PostgreSQL" />
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👨‍💻</text></svg>" />
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#C8522A" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <div class="header-inner">
+        <a href="index.html" class="logo">Seu<span>Nome</span></a>
+        <div class="header-controls">
+          <button class="theme-toggle" id="theme-toggle" aria-label="Alternar tema">🌙</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="project-page">
+      <div class="container">
+
+        <a href="index.html#projetos" class="back-btn">
+          <i class="fas fa-arrow-left"></i> Voltar aos projetos
+        </a>
+
+        <div class="project-hero reveal">
+          <div class="project-meta">
+            <span class="project-tag" style="font-size:0.85rem;padding:0.4rem 0.9rem;">Back-end</span>
+            <span class="project-tag" style="font-size:0.85rem;padding:0.4rem 0.9rem;">CMS</span>
+          </div>
+          <h1 class="project-page-title">DevBlog<br /><span style="color:var(--accent)">Plataforma de Artigos</span></h1>
+          <p class="project-description">
+            Blog técnico completo desenvolvido com Python e Django, suportando escrita em Markdown com preview ao vivo, sistema de tags, busca full-text com Elasticsearch, painel de administração customizado e leitura estimada por artigo. Hospedado no Railway com PostgreSQL gerenciado.
+          </p>
+        </div>
+
+        <div class="project-content">
+
+          <div class="project-main">
+
+            <div class="carousel reveal">
+              <div class="carousel-track">
+                <div class="carousel-slide">📝 Editor Markdown</div>
+                <div class="carousel-slide" style="background:linear-gradient(135deg,#1a2535,#2d3f5a);">🔍 Busca Full-Text</div>
+                <div class="carousel-slide" style="background:linear-gradient(135deg,#f5f0eb,#ede8e0);">🏷️ Sistema de Tags</div>
+                <div class="carousel-slide" style="background:linear-gradient(135deg,#1f1a0f,#2d2510);">⚙️ Admin Panel</div>
+              </div>
+              <button class="carousel-btn prev" aria-label="Slide anterior"><i class="fas fa-chevron-left"></i></button>
+              <button class="carousel-btn next" aria-label="Próximo slide"><i class="fas fa-chevron-right"></i></button>
+              <div class="carousel-dots"></div>
+            </div>
+
+            <div class="reveal reveal-delay-1">
+              <h2 style="font-family:var(--font-display);font-size:1.75rem;margin-bottom:1.25rem;">
+                <i class="fas fa-user-code" style="color:var(--accent);margin-right:0.5rem;"></i>
+                Minha Participação
+              </h2>
+              <ul class="participation-list">
+                <li class="participation-item"><i class="fas fa-check-circle"></i>Modelagem do banco de dados relacional com Django ORM e migrações</li>
+                <li class="participation-item"><i class="fas fa-check-circle"></i>Implementação do parser Markdown com suporte a code highlighting (Pygments)</li>
+                <li class="participation-item"><i class="fas fa-check-circle"></i>Integração com Elasticsearch para busca full-text performática</li>
+                <li class="participation-item"><i class="fas fa-check-circle"></i>Customização do Django Admin com django-unfold para UX moderna</li>
+                <li class="participation-item"><i class="fas fa-check-circle"></i>Sistema de comentários com moderação e notificações por e-mail</li>
+                <li class="participation-item"><i class="fas fa-check-circle"></i>CI/CD com GitHub Actions e deploy automático no Railway</li>
+              </ul>
+            </div>
+          </div>
+
+          <aside class="project-sidebar">
+
+            <div class="sidebar-card reveal reveal-delay-1">
+              <h3><i class="fas fa-tools" style="margin-right:0.4rem;color:var(--accent);"></i>Tecnologias</h3>
+              <div class="tech-badges">
+                <span class="tech-badge">Python</span>
+                <span class="tech-badge">Django</span>
+                <span class="tech-badge">PostgreSQL</span>
+                <span class="tech-badge">Elasticsearch</span>
+                <span class="tech-badge">Redis</span>
+                <span class="tech-badge">Celery</span>
+                <span class="tech-badge">GitHub Actions</span>
+                <span class="tech-badge">Railway</span>
+              </div>
+            </div>
+
+            <div class="sidebar-card reveal reveal-delay-2">
+              <h3><i class="fas fa-link" style="margin-right:0.4rem;color:var(--accent);"></i>Links</h3>
+              <div class="project-action-links">
+                <a href="https://github.com/seuusername/devblog" target="_blank" rel="noopener" class="btn btn-outline" style="justify-content:center;">
+                  <i class="fab fa-github"></i> Ver no GitHub
+                </a>
+                <a href="https://devblog-demo.railway.app" target="_blank" rel="noopener" class="btn btn-primary" style="justify-content:center;">
+                  <i class="fas fa-external-link-alt"></i> Acessar Demo
+                </a>
+              </div>
+            </div>
+
+            <div class="sidebar-card reveal reveal-delay-3">
+              <h3><i class="fas fa-info-circle" style="margin-right:0.4rem;color:var(--accent);"></i>Detalhes</h3>
+              <div style="display:flex;flex-direction:column;gap:0.75rem;">
+                <div style="font-size:0.85rem;">
+                  <span style="color:var(--text-muted);font-family:var(--font-mono);display:block;font-size:0.72rem;margin-bottom:0.2rem;">Tipo</span>
+                  <span style="font-weight:600;">Projeto Pessoal</span>
+                </div>
+                <div style="font-size:0.85rem;">
+                  <span style="color:var(--text-muted);font-family:var(--font-mono);display:block;font-size:0.72rem;margin-bottom:0.2rem;">Status</span>
+                  <span style="font-weight:600;color:var(--accent);">✅ Em produção</span>
+                </div>
+                <div style="font-size:0.85rem;">
+                  <span style="color:var(--text-muted);font-family:var(--font-mono);display:block;font-size:0.72rem;margin-bottom:0.2rem;">Período</span>
+                  <span style="font-weight:600;">Mar 2024 – Jun 2024</span>
+                </div>
+              </div>
+            </div>
+
+          </aside>
+        </div>
+
+        <div style="margin-top:5rem;padding-top:3rem;border-top:1px solid var(--border);" class="reveal">
+          <h2 style="font-family:var(--font-display);font-size:1.5rem;margin-bottom:1.5rem;">Outros Projetos</h2>
+          <div style="display:flex;gap:1rem;flex-wrap:wrap;">
+            <a href="projeto1.html" class="btn btn-outline"><i class="fas fa-arrow-right"></i> TaskFlow</a>
+            <a href="projeto3.html" class="btn btn-outline"><i class="fas fa-arrow-right"></i> StockAI</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <p class="footer-copy">© 2025 Seu Nome</p>
+        <a href="index.html" class="footer-copy" style="color:var(--accent);">← Voltar ao portfólio</a>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top" id="scroll-top" aria-label="Voltar ao topo">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
