@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>VitaMed | Portfólio</title>
-  <meta name="description" content="VitaMed — sistema web para agendamento de consultas e exames médicos." />
+  <title>ECOmida | Portfólio</title>
+  <meta name="description" content="ECOmida — sistema de doações e reaproveitamento de alimentos com React e Flask." />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👨‍💻</text></svg>" />
   <link rel="manifest" href="manifest.json" />
   <meta name="theme-color" content="#C8522A" />
@@ -34,20 +34,21 @@
         <div class="project-hero reveal">
           <div class="project-meta">
             <span class="project-tag" style="font-size:0.85rem;padding:0.4rem 0.9rem;">Web</span>
-            <span class="project-tag" style="font-size:0.85rem;padding:0.4rem 0.9rem;">2º Semestre</span>
+            <span class="project-tag" style="font-size:0.85rem;padding:0.4rem 0.9rem;">4º Semestre</span>
             <span class="project-tag" style="font-size:0.85rem;padding:0.4rem 0.9rem;background:var(--bg-secondary);color:var(--text-muted);">✅ Concluído</span>
           </div>
-          <h1 class="project-page-title">Vita<span style="color:var(--accent)">Med</span></h1>
-          <p class="project-description">Sistema web para agendamento de consultas e gestão básica de usuários, com autenticação, área de perfil e fluxo de recuperação de senha por e-mail. O VitaMed facilita o agendamento de consultas e exames médicos com especialistas, entregando uma experiência fluida e segura para pacientes e clínicas.</p>
+          <h1 class="project-page-title">ECO<span style="color:var(--accent)">mida</span></h1>
+          <p class="project-description">Projeto desenvolvido com React no frontend e Flask + MongoDB no backend. O ECOmida permite apoiar e aprimorar o trabalho de combate à fome por meio de doações e reaproveitamento de alimentos, conectando doadores a organizações que precisam, com uma interface intuitiva e acessível para todos os perfis de usuário.</p>
         </div>
 
         <div class="project-content">
           <div class="project-main">
-            <div class="carousel reveal" aria-label="Screenshots do projeto VitaMed">
+            <div class="carousel reveal" aria-label="Screenshots do projeto ECOmida">
               <div class="carousel-track">
-                <div class="carousel-slide"><img src="img/projetos/projeto2.png" alt="VitaMed - Tela Principal" loading="lazy" onerror="this.parentElement.innerHTML='🏥 Tela Principal'"></div>
-                <div class="carousel-slide"><img src="img/projetos/projeto2-1.png" alt="VitaMed - Agendamento" loading="lazy" onerror="this.parentElement.innerHTML='🏥 Agendamento'"></div>
-                <div class="carousel-slide"><img src="img/projetos/projeto2-2.png" alt="VitaMed - Perfil" loading="lazy" onerror="this.parentElement.innerHTML='🏥 Perfil do Usuário'"></div>
+                <div class="carousel-slide"><img src="img/projetos/projeto4.png" alt="ECOmida - Tela Principal" loading="lazy" onerror="this.parentElement.innerHTML='🌱 Tela Principal'"></div>
+                <div class="carousel-slide"><img src="img/projetos/projeto4-1.png" alt="ECOmida - Doações" loading="lazy" onerror="this.parentElement.innerHTML='🌱 Doações'"></div>
+                <div class="carousel-slide"><img src="img/projetos/projeto4-2.png" alt="ECOmida - Mapa" loading="lazy" onerror="this.parentElement.innerHTML='🌱 Mapa'"></div>
+                <div class="carousel-slide"><img src="img/projetos/projeto4-3.png" alt="ECOmida - Dashboard" loading="lazy" onerror="this.parentElement.innerHTML='🌱 Dashboard'"></div>
               </div>
               <button class="carousel-btn prev" aria-label="Slide anterior"><i class="fas fa-chevron-left"></i></button>
               <button class="carousel-btn next" aria-label="Próximo slide"><i class="fas fa-chevron-right"></i></button>
@@ -59,11 +60,11 @@
                 <i class="fas fa-user-code" style="color:var(--accent);margin-right:0.5rem;"></i>Minha Participação
               </h2>
               <ul class="participation-list">
-                <li class="participation-item"><i class="fas fa-check-circle"></i>Participei ativamente no desenvolvimento de todo o backend com Node.js e Express</li>
-                <li class="participation-item"><i class="fas fa-check-circle"></i>Modelei o banco de dados relacional (MER/DER) e implementei com Sequelize e MySQL</li>
-                <li class="participation-item"><i class="fas fa-check-circle"></i>Configurei autenticação com Passport.js e sessões seguras com Express Session</li>
-                <li class="participation-item"><i class="fas fa-check-circle"></i>Implementei o fluxo de recuperação de senha por e-mail via Nodemailer e Mailtrap</li>
-                <li class="participation-item"><i class="fas fa-check-circle"></i>Realizei o deploy da aplicação na Vercel com variáveis de ambiente configuradas</li>
+                <li class="participation-item"><i class="fas fa-check-circle"></i>Elaborei o backend completo da aplicação com Python e Flask (API RESTful)</li>
+                <li class="participation-item"><i class="fas fa-check-circle"></i>Modelei e implementei o banco de dados não relacional com MongoDB</li>
+                <li class="participation-item"><i class="fas fa-check-circle"></i>Desenvolvi os endpoints de doações, reaproveitamento e gestão de usuários</li>
+                <li class="participation-item"><i class="fas fa-check-circle"></i>Integrei o backend com o frontend React via consumo de API REST</li>
+                <li class="participation-item"><i class="fas fa-check-circle"></i>Realizei o deploy do frontend na Vercel e configurei o ambiente de produção</li>
               </ul>
             </div>
           </div>
@@ -72,14 +73,12 @@
             <div class="sidebar-card reveal reveal-delay-1">
               <h3><i class="fas fa-tools" style="margin-right:0.4rem;color:var(--accent);"></i>Tecnologias</h3>
               <div class="tech-badges">
+                <span class="tech-badge">React.js</span>
+                <span class="tech-badge">CSS3</span>
                 <span class="tech-badge">Node.js</span>
-                <span class="tech-badge">Express</span>
-                <span class="tech-badge">Handlebars</span>
-                <span class="tech-badge">Sequelize</span>
-                <span class="tech-badge">MySQL</span>
-                <span class="tech-badge">Passport.js</span>
-                <span class="tech-badge">Nodemailer</span>
-                <span class="tech-badge">Bootstrap</span>
+                <span class="tech-badge">Python</span>
+                <span class="tech-badge">Flask</span>
+                <span class="tech-badge">MongoDB</span>
                 <span class="tech-badge">Git</span>
                 <span class="tech-badge">GitHub</span>
               </div>
@@ -87,16 +86,16 @@
             <div class="sidebar-card reveal reveal-delay-2">
               <h3><i class="fas fa-link" style="margin-right:0.4rem;color:var(--accent);"></i>Links</h3>
               <div class="project-action-links">
-                <a href="https://github.com/Josec690/PI-Vitamed_2DSM" target="_blank" rel="noopener" class="btn btn-outline" style="justify-content:center;"><i class="fab fa-github"></i> Ver no GitHub</a>
-                <a href="https://projeto-pi-vitamed.vercel.app/" target="_blank" rel="noopener" class="btn btn-primary" style="justify-content:center;"><i class="fas fa-external-link-alt"></i> Acessar Demo</a>
+                <a href="https://github.com/Josec690/PI-ECOmida_4DSM" target="_blank" rel="noopener" class="btn btn-outline" style="justify-content:center;"><i class="fab fa-github"></i> Ver no GitHub</a>
+                <a href="https://pi-ecomida4dsm.vercel.app/" target="_blank" rel="noopener" class="btn btn-primary" style="justify-content:center;"><i class="fas fa-external-link-alt"></i> Acessar Demo</a>
               </div>
             </div>
             <div class="sidebar-card reveal reveal-delay-3">
               <h3><i class="fas fa-info-circle" style="margin-right:0.4rem;color:var(--accent);"></i>Detalhes</h3>
               <div style="display:flex;flex-direction:column;gap:0.75rem;">
-                <div style="font-size:0.85rem;"><span style="color:var(--text-muted);font-family:var(--font-mono);display:block;font-size:0.72rem;margin-bottom:0.2rem;">Tipo</span><span style="font-weight:600;">Projeto Integrador — 2º Semestre</span></div>
+                <div style="font-size:0.85rem;"><span style="color:var(--text-muted);font-family:var(--font-mono);display:block;font-size:0.72rem;margin-bottom:0.2rem;">Tipo</span><span style="font-weight:600;">Projeto Integrador — 4º Semestre</span></div>
                 <div style="font-size:0.85rem;"><span style="color:var(--text-muted);font-family:var(--font-mono);display:block;font-size:0.72rem;margin-bottom:0.2rem;">Status</span><span style="font-weight:600;color:var(--accent);">✅ Concluído</span></div>
-                <div style="font-size:0.85rem;"><span style="color:var(--text-muted);font-family:var(--font-mono);display:block;font-size:0.72rem;margin-bottom:0.2rem;">Período</span><span style="font-weight:600;">Fev 2024 – Jun 2024</span></div>
+                <div style="font-size:0.85rem;"><span style="color:var(--text-muted);font-family:var(--font-mono);display:block;font-size:0.72rem;margin-bottom:0.2rem;">Período</span><span style="font-weight:600;">Fev 2025 – Jun 2025</span></div>
               </div>
             </div>
           </aside>
@@ -106,8 +105,8 @@
           <h2 style="font-family:var(--font-display);font-size:1.5rem;margin-bottom:1.5rem;">Outros Projetos</h2>
           <div style="display:flex;gap:1rem;flex-wrap:wrap;">
             <a href="projeto1.html" class="btn btn-outline"><i class="fas fa-arrow-right"></i> AtivaMax</a>
+            <a href="projeto2.html" class="btn btn-outline"><i class="fas fa-arrow-right"></i> VitaMed</a>
             <a href="projeto3.html" class="btn btn-outline"><i class="fas fa-arrow-right"></i> PataClinic</a>
-            <a href="projeto4.html" class="btn btn-outline"><i class="fas fa-arrow-right"></i> ECOmida</a>
             <a href="projeto5.html" class="btn btn-outline"><i class="fas fa-arrow-right"></i> GeFi</a>
           </div>
         </div>

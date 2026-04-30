@@ -3,13 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>StockAI | Seu Nome</title>
-  <meta name="description" content="StockAI — análise preditiva de ações com Python e Machine Learning" />
-
+  <title>PataClinic | Portfólio</title>
+  <meta name="description" content="PataClinic — sistema de agendamento para castração de cães e gatos em clínica veterinária." />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👨‍💻</text></svg>" />
   <link rel="manifest" href="manifest.json" />
   <meta name="theme-color" content="#C8522A" />
-
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
@@ -17,11 +15,10 @@
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-
-  <header class="site-header">
+  <header class="site-header" role="banner">
     <div class="container">
       <div class="header-inner">
-        <a href="index.html" class="logo">Seu<span>Nome</span></a>
+        <a href="index.html" class="logo">J<span>.S</span></a>
         <div class="header-controls">
           <button class="theme-toggle" id="theme-toggle" aria-label="Alternar tema">🌙</button>
         </div>
@@ -32,32 +29,26 @@
   <main>
     <div class="project-page">
       <div class="container">
-
-        <a href="index.html#projetos" class="back-btn">
-          <i class="fas fa-arrow-left"></i> Voltar aos projetos
-        </a>
+        <a href="index.html#projetos" class="back-btn"><i class="fas fa-arrow-left"></i> Voltar aos projetos</a>
 
         <div class="project-hero reveal">
           <div class="project-meta">
-            <span class="project-tag" style="font-size:0.85rem;padding:0.4rem 0.9rem;">Machine Learning</span>
-            <span class="project-tag" style="font-size:0.85rem;padding:0.4rem 0.9rem;">Data Science</span>
+            <span class="project-tag" style="font-size:0.85rem;padding:0.4rem 0.9rem;">Web</span>
+            <span class="project-tag" style="font-size:0.85rem;padding:0.4rem 0.9rem;">3º Semestre</span>
+            <span class="project-tag" style="font-size:0.85rem;padding:0.4rem 0.9rem;background:var(--bg-secondary);color:var(--text-muted);">✅ Concluído</span>
           </div>
-          <h1 class="project-page-title">StockAI<br /><span style="color:var(--accent)">Análise Preditiva de Ações</span></h1>
-          <p class="project-description">
-            Dashboard de análise financeira com machine learning para predição de tendências em ações da B3 e NYSE. Utiliza modelos LSTM e Prophet para forecasting de séries temporais, visualizações interativas com Plotly e consumo da API yfinance para dados históricos em tempo real.
-          </p>
+          <h1 class="project-page-title">Pata<span style="color:var(--accent)">Clinic</span></h1>
+          <p class="project-description">O objetivo deste projeto é desenvolver um sistema web de agendamento PataClinic, facilitando a gestão de consultas e otimizando a experiência dos usuários. O sistema permite agendamentos online para castração de cães e gatos, acesso a informações médicas e muito mais, com interface amigável e segura.</p>
         </div>
 
         <div class="project-content">
-
           <div class="project-main">
-
-            <div class="carousel reveal">
+            <div class="carousel reveal" aria-label="Screenshots do projeto PataClinic">
               <div class="carousel-track">
-                <div class="carousel-slide">📊 Dashboard Principal</div>
-                <div class="carousel-slide" style="background:linear-gradient(135deg,#0f1f12,#1a3520);">📈 Gráficos de Predição</div>
-                <div class="carousel-slide" style="background:linear-gradient(135deg,#f0f5f0,#e0ede0);">🤖 Modelo ML</div>
-                <div class="carousel-slide" style="background:linear-gradient(135deg,#1a1010,#2a1515);">🔔 Alertas de Preço</div>
+                <div class="carousel-slide"><img src="img/projetos/projeto3.png" alt="PataClinic - Tela Principal" loading="lazy" onerror="this.parentElement.innerHTML='🐾 Tela Principal'"></div>
+                <div class="carousel-slide"><img src="img/projetos/projeto3-1.png" alt="PataClinic - Agendamento" loading="lazy" onerror="this.parentElement.innerHTML='🐾 Agendamento'"></div>
+                <div class="carousel-slide"><img src="img/projetos/projeto3-2.png" alt="PataClinic - Painel" loading="lazy" onerror="this.parentElement.innerHTML='🐾 Painel'"></div>
+                <div class="carousel-slide"><img src="img/projetos/projeto3-3.png" alt="PataClinic - Mobile" loading="lazy" onerror="this.parentElement.innerHTML='🐾 Mobile'"></div>
               </div>
               <button class="carousel-btn prev" aria-label="Slide anterior"><i class="fas fa-chevron-left"></i></button>
               <button class="carousel-btn next" aria-label="Próximo slide"><i class="fas fa-chevron-right"></i></button>
@@ -66,78 +57,60 @@
 
             <div class="reveal reveal-delay-1">
               <h2 style="font-family:var(--font-display);font-size:1.75rem;margin-bottom:1.25rem;">
-                <i class="fas fa-user-code" style="color:var(--accent);margin-right:0.5rem;"></i>
-                Minha Participação
+                <i class="fas fa-user-code" style="color:var(--accent);margin-right:0.5rem;"></i>Minha Participação
               </h2>
               <ul class="participation-list">
-                <li class="participation-item"><i class="fas fa-check-circle"></i>Pipeline de coleta e limpeza de dados financeiros com Pandas e yfinance</li>
-                <li class="participation-item"><i class="fas fa-check-circle"></i>Implementação de modelo LSTM com TensorFlow/Keras para forecasting de preços</li>
-                <li class="participation-item"><i class="fas fa-check-circle"></i>Comparação e avaliação de modelos (LSTM vs Prophet vs ARIMA) com métricas MAE/RMSE</li>
-                <li class="participation-item"><i class="fas fa-check-circle"></i>Dashboard interativo com Plotly Dash e gráficos candlestick atualizados ao vivo</li>
-                <li class="participation-item"><i class="fas fa-check-circle"></i>Sistema de alertas por e-mail quando preço cruza thresholds definidos pelo usuário</li>
-                <li class="participation-item"><i class="fas fa-check-circle"></i>Análise de sentimento de notícias financeiras com BERT para enriquecer predições</li>
+                <li class="participation-item"><i class="fas fa-check-circle"></i>Elaborei todo o backend por completo utilizando Node.js com arquitetura MVC</li>
+                <li class="participation-item"><i class="fas fa-check-circle"></i>Modelei e implementei o banco de dados NoSQL com MongoDB e Mongoose</li>
+                <li class="participation-item"><i class="fas fa-check-circle"></i>Desenvolvi a camada de templates dinâmicos com EJS integrada ao backend</li>
+                <li class="participation-item"><i class="fas fa-check-circle"></i>Implementei o sistema de autenticação e controle de sessão dos usuários</li>
+                <li class="participation-item"><i class="fas fa-check-circle"></i>Realizei o deploy completo da aplicação na Vercel com configuração de ambiente</li>
               </ul>
             </div>
           </div>
 
           <aside class="project-sidebar">
-
             <div class="sidebar-card reveal reveal-delay-1">
               <h3><i class="fas fa-tools" style="margin-right:0.4rem;color:var(--accent);"></i>Tecnologias</h3>
               <div class="tech-badges">
-                <span class="tech-badge">Python</span>
-                <span class="tech-badge">TensorFlow</span>
-                <span class="tech-badge">Scikit-learn</span>
-                <span class="tech-badge">Pandas</span>
-                <span class="tech-badge">Plotly Dash</span>
-                <span class="tech-badge">Prophet</span>
-                <span class="tech-badge">yfinance</span>
-                <span class="tech-badge">BERT</span>
-                <span class="tech-badge">Jupyter</span>
+                <span class="tech-badge">JavaScript</span>
+                <span class="tech-badge">Node.js</span>
+                <span class="tech-badge">EJS</span>
+                <span class="tech-badge">MongoDB</span>
+                <span class="tech-badge">CSS3</span>
+                <span class="tech-badge">HTML5</span>
+                <span class="tech-badge">Figma</span>
+                <span class="tech-badge">Git</span>
+                <span class="tech-badge">GitHub</span>
               </div>
             </div>
-
             <div class="sidebar-card reveal reveal-delay-2">
               <h3><i class="fas fa-link" style="margin-right:0.4rem;color:var(--accent);"></i>Links</h3>
               <div class="project-action-links">
-                <a href="https://github.com/seuusername/stockai" target="_blank" rel="noopener" class="btn btn-outline" style="justify-content:center;">
-                  <i class="fab fa-github"></i> Ver no GitHub
-                </a>
-                <a href="https://stockai-demo.streamlit.app" target="_blank" rel="noopener" class="btn btn-primary" style="justify-content:center;">
-                  <i class="fas fa-external-link-alt"></i> Acessar Demo
-                </a>
+                <a href="https://github.com/Josec690/PI-PataClinic_3DSM" target="_blank" rel="noopener" class="btn btn-outline" style="justify-content:center;"><i class="fab fa-github"></i> Ver no GitHub</a>
+                <a href="https://projeto-pi-pataclinic.vercel.app/" target="_blank" rel="noopener" class="btn btn-primary" style="justify-content:center;"><i class="fas fa-external-link-alt"></i> Acessar Demo</a>
               </div>
             </div>
-
             <div class="sidebar-card reveal reveal-delay-3">
               <h3><i class="fas fa-info-circle" style="margin-right:0.4rem;color:var(--accent);"></i>Detalhes</h3>
               <div style="display:flex;flex-direction:column;gap:0.75rem;">
-                <div style="font-size:0.85rem;">
-                  <span style="color:var(--text-muted);font-family:var(--font-mono);display:block;font-size:0.72rem;margin-bottom:0.2rem;">Tipo</span>
-                  <span style="font-weight:600;">Projeto Acadêmico + Pessoal</span>
-                </div>
-                <div style="font-size:0.85rem;">
-                  <span style="color:var(--text-muted);font-family:var(--font-mono);display:block;font-size:0.72rem;margin-bottom:0.2rem;">Status</span>
-                  <span style="font-weight:600;color:var(--accent);">🔄 Em desenvolvimento</span>
-                </div>
-                <div style="font-size:0.85rem;">
-                  <span style="color:var(--text-muted);font-family:var(--font-mono);display:block;font-size:0.72rem;margin-bottom:0.2rem;">Período</span>
-                  <span style="font-weight:600;">Set 2024 – Presente</span>
-                </div>
+                <div style="font-size:0.85rem;"><span style="color:var(--text-muted);font-family:var(--font-mono);display:block;font-size:0.72rem;margin-bottom:0.2rem;">Tipo</span><span style="font-weight:600;">Projeto Integrador — 3º Semestre</span></div>
+                <div style="font-size:0.85rem;"><span style="color:var(--text-muted);font-family:var(--font-mono);display:block;font-size:0.72rem;margin-bottom:0.2rem;">Status</span><span style="font-weight:600;color:var(--accent);">✅ Concluído</span></div>
+                <div style="font-size:0.85rem;"><span style="color:var(--text-muted);font-family:var(--font-mono);display:block;font-size:0.72rem;margin-bottom:0.2rem;">Período</span><span style="font-weight:600;">Ago 2024 – Dez 2024</span></div>
               </div>
             </div>
-
           </aside>
         </div>
 
         <div style="margin-top:5rem;padding-top:3rem;border-top:1px solid var(--border);" class="reveal">
           <h2 style="font-family:var(--font-display);font-size:1.5rem;margin-bottom:1.5rem;">Outros Projetos</h2>
           <div style="display:flex;gap:1rem;flex-wrap:wrap;">
-            <a href="projeto1.html" class="btn btn-outline"><i class="fas fa-arrow-right"></i> TaskFlow</a>
-            <a href="projeto2.html" class="btn btn-outline"><i class="fas fa-arrow-right"></i> DevBlog</a>
+            <a href="projeto1.html" class="btn btn-outline"><i class="fas fa-arrow-right"></i> AtivaMax</a>
+            <a href="projeto2.html" class="btn btn-outline"><i class="fas fa-arrow-right"></i> VitaMed</a>
+            <a href="projeto4.html" class="btn btn-outline"><i class="fas fa-arrow-right"></i> ECOmida</a>
+            <a href="projeto5.html" class="btn btn-outline"><i class="fas fa-arrow-right"></i> GeFi</a>
           </div>
         </div>
-
       </div>
     </div>
   </main>
@@ -145,16 +118,12 @@
   <footer class="site-footer">
     <div class="container">
       <div class="footer-inner">
-        <p class="footer-copy">© 2025 Seu Nome</p>
+        <p class="footer-copy">© 2025 Jose Claudiley</p>
         <a href="index.html" class="footer-copy" style="color:var(--accent);">← Voltar ao portfólio</a>
       </div>
     </div>
   </footer>
-
-  <button class="scroll-top" id="scroll-top" aria-label="Voltar ao topo">
-    <i class="fas fa-arrow-up"></i>
-  </button>
-
+  <button class="scroll-top" id="scroll-top" aria-label="Voltar ao topo"><i class="fas fa-arrow-up"></i></button>
   <script src="js/main.js"></script>
 </body>
 </html>

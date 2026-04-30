@@ -253,9 +253,17 @@ const FormManager = {
 
       const btn = form.querySelector('[type="submit"]');
       const success = document.querySelector('.form-success');
+      const originalBtnText = btn?.textContent || 'Enviar Mensagem';
 
-      btn.textContent = 'Enviando...';
-      btn.disabled = true;
+      if (btn) {
+        btn.textContent = 'Enviando...';
+        btn.disabled = true;
+      }
+
+      if (success) {
+        success.style.display = 'none';
+        success.innerHTML = '';
+      }
 
       const data = {
         name: form.querySelector('[name="name"]').value,
@@ -263,14 +271,39 @@ const FormManager = {
         message: form.querySelector('[name="message"]').value
       };
 
-      // Simulate send (replace with real endpoint or EmailJS)
-      await new Promise(r => setTimeout(r, 1000));
+      try {
+        const response = await fetch('https://formsubmit.co/ajax/joseclaudiley@gmail.com', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            Accept: 'application/json'
+          },
+          body: JSON.stringify({
+            ...data,
+            _subject: 'Nova mensagem do portfólio',
+            _captcha: 'false'
+          })
+        });
 
-      // Show success
-      form.style.display = 'none';
-      if (success) {
-        success.style.display = 'block';
-        success.innerHTML = '✅ Mensagem enviada! Entrarei em contato em breve.';
+        if (!response.ok) {
+          throw new Error('Falha no envio');
+        }
+
+        form.style.display = 'none';
+        if (success) {
+          success.style.display = 'block';
+          success.innerHTML = '✅ Mensagem enviada! Entrarei em contato em breve.';
+        }
+      } catch {
+        if (success) {
+          success.style.display = 'block';
+          success.innerHTML = '❌ Não foi possível enviar agora. Tente novamente em instantes.';
+        }
+      } finally {
+        if (btn) {
+          btn.textContent = originalBtnText;
+          btn.disabled = false;
+        }
       }
     });
   }
