@@ -127,7 +127,15 @@
               <div class="profile-frame">
                 <!-- Substitua pelo caminho da sua foto: img/foto-perfil.jpg -->
                 <div class="profile-placeholder" aria-label="Foto de perfil">
-                  <img src="/img/142069121.jpg" alt="" />
+                  <img
+                    src="img/foto-perfil.jpg"
+                    alt="Foto de perfil"
+                    class="profile-img"
+                    onerror="
+                      this.style.display = 'none';
+                      this.parentElement.setAttribute('data-fallback', 'true');
+                    "
+                  />
                 </div>
                 <a
                   href="https://github.com/Josec690"
