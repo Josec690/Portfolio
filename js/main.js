@@ -1,12 +1,7 @@
-/* ============================================
-   PORTFOLIO - JAVASCRIPT VANILLA ES6+
-   ============================================ */
-
 'use strict';
 
-// ============================================
-// THEME TOGGLE (dark/light mode)
-// ============================================
+// MODO DARK/LIGHT
+
 const ThemeManager = {
   init() {
     const saved = localStorage.getItem('portfolio-theme') || 'light';
@@ -28,9 +23,8 @@ const ThemeManager = {
   }
 };
 
-// ============================================
-// HAMBURGER MENU
-// ============================================
+// MENU HAMBURGER 
+
 const NavManager = {
   init() {
     const hamburger = document.querySelector('.hamburger');
@@ -54,9 +48,8 @@ const NavManager = {
   }
 };
 
-// ============================================
 // HEADER SCROLL EFFECT
-// ============================================
+
 const HeaderManager = {
   init() {
     const header = document.querySelector('.site-header');
@@ -68,9 +61,8 @@ const HeaderManager = {
   }
 };
 
-// ============================================
 // SCROLL REVEAL (IntersectionObserver)
-// ============================================
+
 const RevealManager = {
   init() {
     const elements = document.querySelectorAll('.reveal');
@@ -99,9 +91,8 @@ const RevealManager = {
   }
 };
 
-// ============================================
 // SCROLL TO TOP
-// ============================================
+
 const ScrollTopManager = {
   init() {
     const btn = document.getElementById('scroll-top');
@@ -117,9 +108,8 @@ const ScrollTopManager = {
   }
 };
 
-// ============================================
 // SMOOTH SCROLL NAVIGATION
-// ============================================
+
 const SmoothScroll = {
   init() {
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -134,9 +124,8 @@ const SmoothScroll = {
   }
 };
 
-// ============================================
 // CAROUSEL
-// ============================================
+
 const CarouselManager = {
   instances: new Map(),
 
@@ -158,7 +147,6 @@ const CarouselManager = {
     let current = 0;
     let autoTimer;
 
-    // Create dots
     const dots = [];
     slides.forEach((_, i) => {
       const dot = document.createElement('button');
@@ -182,7 +170,6 @@ const CarouselManager = {
     prevBtn?.addEventListener('click', () => { goTo(current - 1); resetAuto(); });
     nextBtn?.addEventListener('click', () => { goTo(current + 1); resetAuto(); });
 
-    // Auto advance
     const startAuto = () => {
       autoTimer = setInterval(() => goTo(current + 1), 4000);
     };
@@ -192,7 +179,6 @@ const CarouselManager = {
       startAuto();
     };
 
-    // Touch/swipe support
     let startX = 0;
     track.addEventListener('touchstart', e => { startX = e.touches[0].clientX; }, { passive: true });
     track.addEventListener('touchend', e => {
@@ -207,9 +193,8 @@ const CarouselManager = {
   }
 };
 
-// ============================================
 // COPY TO CLIPBOARD
-// ============================================
+
 const ClipboardManager = {
   init() {
     document.querySelectorAll('[data-copy]').forEach(btn => {
@@ -240,9 +225,8 @@ const ClipboardManager = {
   }
 };
 
-// ============================================
 // CONTACT FORM (fetch + fallback)
-// ============================================
+
 const FormManager = {
   init() {
     const form = document.getElementById('contact-form');
@@ -309,9 +293,8 @@ const FormManager = {
   }
 };
 
-// ============================================
-// TYPING EFFECT (Hero subtitle)
-// ============================================
+// TYPING EFFECT
+
 const TypingEffect = {
   init() {
     const el = document.getElementById('typing-text');
@@ -353,9 +336,8 @@ const TypingEffect = {
   }
 };
 
-// ============================================
 // LANGUAGE BARS ANIMATION
-// ============================================
+
 const LangBarsManager = {
   init() {
     // Bars animated via IntersectionObserver in RevealManager
@@ -369,9 +351,8 @@ const LangBarsManager = {
   }
 };
 
-// ============================================
-// BACK BUTTON (project pages)
-// ============================================
+// BACK BUTTON 
+
 const BackManager = {
   init() {
     document.querySelectorAll('.back-btn').forEach(btn => {
@@ -388,9 +369,8 @@ const BackManager = {
   }
 };
 
-// ============================================
 // ACTIVE NAV HIGHLIGHT
-// ============================================
+
 const ActiveNav = {
   init() {
     const sections = document.querySelectorAll('section[id]');
@@ -417,9 +397,8 @@ const ActiveNav = {
   }
 };
 
-// ============================================
 // INIT ALL
-// ============================================
+
 document.addEventListener('DOMContentLoaded', () => {
   ThemeManager.init();
   NavManager.init();

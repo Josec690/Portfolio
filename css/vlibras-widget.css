@@ -1,0 +1,11 @@
+/* VLibras — ajustes de posicionamento do widget oficial */
+
+/* Empurra o botão do VLibras para não sobrepor o botão do WhatsApp */
+[vw] {
+  display: inline-block;
+}
+
+[vw] .enabled {
+  bottom: 100px !important; /* sobe acima do botão do WhatsApp */
+  right: 20px   !important;
+}

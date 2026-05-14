@@ -1,11 +1,7 @@
-/* ============================================
-   PORTFOLIO - CSS3 PURO - SEM FRAMEWORKS
-   ============================================ */
-
-/* --- GOOGLE FONTS --- */
+/* GOOGLE FONTS
+ */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
 
-/* --- CSS CUSTOM PROPERTIES --- */
 :root {
   /* Light Mode */
   --bg-primary: #F7F4EF;
@@ -131,9 +127,7 @@ h1, h2, h3, h4 {
 .reveal-delay-3 { transition-delay: 0.3s; }
 .reveal-delay-4 { transition-delay: 0.4s; }
 
-/* ============================================
-   HEADER / NAV
-   ============================================ */
+/* HEADER */
 .site-header {
   position: fixed;
   top: 0;
@@ -297,9 +291,7 @@ h1, h2, h3, h4 {
   color: var(--accent);
 }
 
-/* ============================================
-   HERO SECTION
-   ============================================ */
+/* APRESENTAÇÃO */
 .hero {
   min-height: 100vh;
   display: flex;
@@ -548,9 +540,8 @@ h1, h2, h3, h4 {
   50% { transform: translateX(-50%) translateY(6px); }
 }
 
-/* ============================================
-   SECTION LABELS
-   ============================================ */
+/* LABELS */
+
 .section-label {
   display: flex;
   align-items: center;
@@ -585,9 +576,7 @@ h1, h2, h3, h4 {
   font-weight: 300;
 }
 
-/* ============================================
-   ACADEMIC SECTION
-   ============================================ */
+/* ACADEMICO */
 .academic-section {
   background: var(--bg-secondary);
 }
@@ -652,9 +641,8 @@ h1, h2, h3, h4 {
   font-family: var(--font-mono);
 }
 
-/* ============================================
-   EXPERIENCE SECTION
-   ============================================ */
+/* EXPERIENCIA */
+
 .experience-card {
   background: var(--bg-card);
   border: 1px solid var(--border);
@@ -769,9 +757,7 @@ h1, h2, h3, h4 {
   margin-top: 0.1em;
 }
 
-/* ============================================
-   COURSES SECTION
-   ============================================ */
+/* CURSOS */
 .courses-section {
   background: var(--bg-secondary);
 }
@@ -854,9 +840,8 @@ h1, h2, h3, h4 {
   font-family: var(--font-mono);
 }
 
-/* ============================================
-   LANGUAGES SECTION
-   ============================================ */
+/* IDIOMAS */
+
 .languages-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -916,9 +901,8 @@ h1, h2, h3, h4 {
   transition: width 1.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* ============================================
-   PROJECTS SECTION
-   ============================================ */
+/* PROJETOS */
+
 .projects-section {
   background: var(--bg-secondary);
 }
@@ -1067,9 +1051,8 @@ h1, h2, h3, h4 {
   transform: translateX(4px);
 }
 
-/* ============================================
-   CONTACT SECTION
-   ============================================ */
+/* CONTATO */
+
 .contact-layout {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1186,9 +1169,8 @@ h1, h2, h3, h4 {
   font-weight: 600;
 }
 
-/* ============================================
-   FOOTER
-   ============================================ */
+/* FOOTER */
+
 .site-footer {
   border-top: 1px solid var(--border);
   padding: 2.5rem 0;
@@ -1223,9 +1205,8 @@ h1, h2, h3, h4 {
   color: var(--accent);
 }
 
-/* ============================================
-   SCROLL TO TOP
-   ============================================ */
+/* SCROLL TO TOP */
+
 .scroll-top {
   position: fixed;
   bottom: 2rem;
@@ -1260,9 +1241,8 @@ h1, h2, h3, h4 {
   transform: translateY(-3px);
 }
 
-/* ============================================
-   PROJECT PAGE STYLES
-   ============================================ */
+/* PROJECT PAGE STYLES */
+
 .project-page {
   padding-top: 120px;
   min-height: 100vh;
@@ -1483,9 +1463,8 @@ h1, h2, h3, h4 {
   margin-top: 0.15em;
 }
 
-/* ============================================
-   COPY EMAIL BUTTON
-   ============================================ */
+/* BOTAO DE COPIAR EMAIL */
+
 .copy-email {
   display: inline-flex;
   align-items: center;
@@ -1504,9 +1483,8 @@ h1, h2, h3, h4 {
   color: var(--accent);
 }
 
-/* ============================================
-   RESPONSIVE
-   ============================================ */
+/* RESPONSIVIDADE */
+
 @media (max-width: 900px) {
   .hero-layout {
     grid-template-columns: 1fr;
@@ -1585,9 +1563,8 @@ h1, h2, h3, h4 {
   }
 }
 
-/* ============================================
-   SELECTION + SCROLLBAR
-   ============================================ */
+/* SELECTION + SCROLLBAR */
+
 ::selection {
   background: var(--accent);
   color: white;
